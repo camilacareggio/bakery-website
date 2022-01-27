@@ -1,0 +1,231 @@
+/*https://colorhunt.co/palette/ffaaa5fcf8f3ffd3b6698474 COLOR PALETTE*/
+
+body {
+    font-size: 16px;
+    color: #000;
+    background-color: #FCF8F3;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/*HEADER*/
+#header-nav{
+    background-color: #FFAAA5;
+}
+
+#logo-img{
+    background: url('../images/logo-xlg.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand{
+  padding-top: 20px;
+}
+
+.navbar-brand h1 { /*BAKERY NAME*/
+  font-family: 'Niconne', cursive;
+  color: #FCF8F3;
+  font-size: 4em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.navbar-brand a:hover, .navbar-brand a:link, .navbar-brand li:active, .navbar-brand a:visited {
+  text-decoration: none;
+}
+
+#nav-list a { /*NAVBAR ITEMS*/
+  color: #FCF8F3;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#nav-list a:hover, #nav-list .active {
+  background: #FFD3B6;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}  
+#nav-list li{
+  background: transparent;
+  border: none;
+}
+
+header{
+  margin-bottom: 30px;
+}/* End HEADER*/
+
+/*JUMBOTRON*/
+.container .jumbotron{
+  margin-bottom: 30px;
+}
+
+/*TILES*/
+#main-content > h2{ /*our products*/
+  font-family: 'Niconne', cursive;
+  color: #FFAAA5;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+#cake-tile, #muffin-tile, #more-products-tile{
+  height: 300px;
+  width: 80%;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: 3px solid #FFD3B6;
+  overflow: hidden;
+}
+#cake-tile:hover, #muffin-tile:hover, #more-products-tile:hover{
+  box-shadow: 0 1px 5px 1px #698474;
+}
+
+#cake-tile{
+  background: url('../images/cake-tile.jpg') no-repeat;
+  background-position: center;
+}
+#muffin-tile{
+  background: url('../images/muffin-tile.jpg') no-repeat;
+  background-position: center;
+}
+#more-products-tile{
+  background: url('../images/more-products-tile.png') no-repeat;
+  background-position: center;
+}
+
+#cake-tile span, #muffin-tile span, #more-products-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8em;
+  font-family: 'Niconne', cursive;
+  background-color: #FFD3B6;
+  color: #000;
+  opacity: .7;
+} /* End TILES*/
+
+/*FOOTER*/
+.panel-footer{
+  margin-top: 35px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #698474;
+}
+.panel-footer div.row{
+  margin-bottom: 35px;
+}
+#hours, #address, #contact{
+  line-height: 2.5;
+}
+
+#hours > span, #address > span, #contact > span { /*TITLES*/
+  font-size: 1.3em;
+}
+
+#address p{ /* delivery in__*/
+  color: #FCF8F3;
+  font-size: .8em; 
+  line-height: 1.8;
+}
+#contact #phone{
+  color: #000;
+  text-decoration: none;
+} /*End FOOTER*/
+
+/*CAKE-MENU PAGE*/
+#cake-title{ /*MAIN TITLE*/
+  color: #FFAAA5;
+  font-family: 'Niconne', cursive;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+.cake-item h2{ /*CAKES TITLE*/
+  font-family: 'Niconne', cursive;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.cake-item p{ /*CAKE DESCRIPTION*/
+  font-style: italic;
+}
+
+.cake-img{
+  text-align: center;
+  margin-bottom: 15%;
+}
+.cake-item{
+  margin-bottom: 15%;
+} /*End CAKE-MENU PAGE*/
+
+/*MEDIA QUERIES
+https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+
+/*Large and Medium Devices*/
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  /* Header */
+  #logo-img {
+    background: url('../images/logo-lg.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-brand h1{ /*Bakery name*/
+    margin-top: 5px;
+    font-size: 6vw;
+  }
+}
+
+/*Small Devices*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /*Bakery name*/
+    font-size: 6vw;
+  }
+
+  /*Cake-menu page*/
+  #cake-list .cake-item{
+    margin-bottom: 0;
+  }
+}
+
+/*Extra Small Devices*/
+@media (max-width:575px){
+  /*HEADER*/
+  .navbar-brand h1{
+    padding-top: 5px;
+    font-size: 8vw;
+  }
+
+  /*Cake-menu page*/
+  #cake-list .cake-item{
+    margin-bottom: 0;
+  }
+
+  /*FOOTER*/
+  .panel-footer section{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .panel-footer section hr{
+    width: 70%;
+    margin: 30px auto 0 auto;
+  }
+}

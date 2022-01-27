@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bakery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
+</style>
+  </head>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default navbar-light">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <a href="index.html" class="float-start d-none d-md-block">
+                        <div id="logo-img" alt="Logo image"></div>
+                    </a>
+
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Bakery</h1></a>
+                    </div>
+
+                </div> <!--End .navbar-header-->
+
+<!-- NAVBAR TOGGLE ITEMS-->
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-md-none" id="navbarSupportedContent">
+                    <ul id="nav-list" class="navbar-nav float-none">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cake-menu.html">Cakes</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Muffins</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a></li>
+                    </ul><!--End #nav-list-->
+                </div> <!--End navbar items md- -->
+
+<!--NAVBAR ITEMS-->
+                <div class="d-none d-md-block">
+                    <ul id="nav-list" class="navbar-nav float-end list-group list-group-horizontal">
+                        <li class="nav-item list-group-item">
+                            <a class="nav-link active" href="cake-menu.html">
+                                <div>Cakes</div></a></li>
+                        <li class="nav-item list-group-item">
+                            <a class="nav-link" href="">
+                                <div>Muffins</div></a></li>
+                        <li class="nav-item list-group-item">
+                            <a class="nav-link" href="">
+                                <div>About</div></a></li>        
+                    </ul> <!--End #nav-list-->
+                </div> <!--End navbar items md+ -->
+
+            </div> <!--End .container-->
+        </nav> <!--End #header-nav-->
+    </header>
+
+    
+
+    <div id="main-content" class="container">
+        <div id="cake-title">
+            Cakes
+        </div>
+        <div id="cake-list" class="row">
+
+            <div class="cake-item col-md-6">
+                <h2>Cake 1</h2>
+                <p>cake description cake description cake description cake description cake description cake description cake description cake description
+                    cake description cake description cake description cake description cake description cake description cake description cake description
+                </p>
+            </div>
+            <div class="cake-img col-md-6">
+                <img src="images/menu/cake-1.jpg">
+            </div>
+
+            <div class="cake-item col-md-6 d-md-none">
+                <h2>Cake 2</h2>
+                <p>cake description cake description cake description cake description cake description cake description cake description cake description
+                    cake description cake description cake description cake description cake description cake description cake description cake description
+                </p>
+            </div>
+            <div class="cake-img col-md-6">
+                <img src="images/menu/cake-1.jpg">
+            </div>
+            <div class="cake-item col-md-6 d-none d-md-block">
+                <h2>Cake 2</h2>
+                <p>cake description cake description cake description cake description cake description cake description cake description cake description
+                    cake description cake description cake description cake description cake description cake description cake description cake description
+                </p>
+            </div>
+
+            <div class="cake-item col-md-6">
+                <h2>Cake 3</h2>
+                <p>cake description cake description cake description cake description cake description cake description cake description cake description
+                    cake description cake description cake description cake description cake description cake description cake description cake description
+                </p>
+            </div>
+            <div class="cake-img col-md-6">
+                <img src="images/menu/cake-1.jpg">
+            </div>
+
+            <div class="cake-item col-md-6 d-md-none">
+                <h2>Cake 4</h2>
+                <p>cake description cake description cake description cake description cake description cake description cake description cake description
+                    cake description cake description cake description cake description cake description cake description cake description cake description
+                </p>
+            </div>
+            <div class="cake-img col-md-6">
+                <img src="images/menu/cake-1.jpg">
+            </div>
+            <div class="cake-item col-md-6 d-none d-md-block">
+                <h2>Cake 4</h2>
+                <p>cake description cake description cake description cake description cake description cake description cake description cake description
+                    cake description cake description cake description cake description cake description cake description cake description cake description
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+
+                <section id="contact" class="col-sm-4">
+                    <span>Contact us</span><br>
+                    <a id="phone" href="tel:351 1111111">
+                        <i class="bi-telephone-fill"></i><span> 351 1111111</span> </a> <br>
+                    <i class="bi-whatsapp"></i> 351 1111111<br>
+                    <i class="bi-instagram"></i> bakery
+                    <hr class="d-block d-sm-none">
+                </section> <!--End #contact-->
+
+                <section id="hours" class="col-sm-4">
+                    <span>Hours</span><br>
+                    Mon - Fri: 9hs - 18hs<br>
+                    Sat: 9hs - 13:30hs<br>
+                    Sunday closed
+                    <hr class="d-block d-sm-none">
+                </section><!--End #hours-->
+
+                <section id="address" class="col-sm-4">
+                    <span>Address</span><br>
+                    <a href="https://goo.gl/maps/Xf9P3nzcK1SXsa2G6" target="_blank">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13636.549228930187!2d-64.28550928831102!3d-31.299949891001837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329cf75ca7fb19%3A0x942d968762389d9a!2sVilla%20Allende%20Shopping%20-%20VAS!5e0!3m2!1ses!2sar!4v1642970836503!5m2!1ses!2sar"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></a>
+                    <p>*Delivery only in __________</p>
+                </section><!--End #address-->
+
+            </div> <!--End .row-->
+            <div class="text-center">&copy; Copyright something something 2022</div>
+        </div> <!--End .container-->
+    </footer>
+        
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
