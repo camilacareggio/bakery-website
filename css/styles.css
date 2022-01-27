@@ -137,7 +137,7 @@ header{
   font-size: .8em; 
   line-height: 1.8;
 }
-#contact #phone{
+#contact #phone, #contact{
   color: #000;
   text-decoration: none;
 } /*End FOOTER*/
