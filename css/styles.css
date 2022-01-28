@@ -160,13 +160,69 @@ header{
   font-style: italic;
 }
 
+#cake-list hr{
+  width: 70%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
 .cake-img{
   text-align: center;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 .cake-item{
   margin-bottom: 15%;
 } /*End CAKE-MENU PAGE*/
+
+/*MUFFIN-MENU PAGE*/
+.muffin-item h3{ /*Muffins title*/
+  font-family: 'Niconne', cursive;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.muffin-item{
+  margin-bottom: 25px;
+}
+
+.muffin-item hr{
+  width: 70%;
+  margin: auto;
+}
+
+.muffin-price{
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+.muffin-item .muffin-price span{
+  font-size: .7em;
+}
+
+.muffin-photo{
+  position: relative;
+  border: 1px solid #FFD3B6;
+  overflow: hidden;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+
+.muffin-description{
+  padding-right: 30px;
+}
+
+h3.muffin-item{
+  margin: 0 0 10px;
+}
+
+.muffin-details{
+  font-style: italic;
+} /*End MUFFIN-MENU PAGE*/
 
 /*MEDIA QUERIES
 https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
@@ -228,4 +284,16 @@ https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
     width: 70%;
     margin: 30px auto 0 auto;
   }
+}
+
+/*Small and Extra Small Devices*/
+@media (max-width:767px){
+    /*Muffin-menu page*/
+    .muffin-item .muffin-price{
+      text-align: center;
+    }
+  
+    .muffin-description{
+      text-align: center;
+    }
 }
